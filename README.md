@@ -1,2 +1,4 @@
 # NeuroComm
-The code I made to interface with a hacked MindFlex headset.
+The code I made to interface with my hacked MindFlex headset.
+
+I rewired my mindflex headset and made it output its internal data through an arduino, and onto my PC. From here, a handy library (https://github.com/kitschpatrol/Brain) was able to decipher the incoming data, and output "strengths" of different brain wave frequencies (I was most concerned with alpha and beta). This data was then taken and used in yesno.py, which was a proof of concept for binary communication using a cheap EEG. As the name implies, users were able to answer yes or no questions. They did this by changing their concentration level- if they were highly concentrated on a point on a screen (I tested with an optical illusion spiral such as this one: https://i.ytimg.com/vi/ZPSBTGik3TY/maxresdefault.jpg) then the program would register "yes", and if they were unconcentrated, the program would register "no."
